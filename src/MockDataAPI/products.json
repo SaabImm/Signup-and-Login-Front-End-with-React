@@ -1,0 +1,1093 @@
+[
+  {
+    "id": 1,
+    "name": "Logitech Monitors 230",
+    "description": "High-quality monitors by Logitech.",
+    "longDescription": "The Logitech monitors is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "monitors",
+    "brand": "Logitech",
+    "price": 1053.76,
+    "stock": 36,
+    "rating": 4.8,
+    "reviews": [
+      {
+        "user": "Ethan",
+        "comment": "Amazing product!",
+        "rating": 3
+      }
+    ],
+    "specs": {
+      "size": "33 inches",
+      "resolution": "1080p",
+      "refreshRate": "144Hz"
+    },
+    "discount": 0.05,
+    "tags": [
+      "wireless",
+      "ultrawide"
+    ],
+    "image": "/images/products/monitors-1.jpg",
+    "images": [
+      "/images/products/monitors-1-1.jpg",
+      "/images/products/monitors-1-2.jpg",
+      "/images/products/monitors-1-3.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Dell Headphones 637",
+    "description": "High-quality headphones by Dell.",
+    "longDescription": "The Dell headphones is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "headphones",
+    "brand": "Dell",
+    "price": 1664.67,
+    "stock": 31,
+    "rating": 3.8,
+    "reviews": [
+      {
+        "user": "Ethan",
+        "comment": "Not as expected.",
+        "rating": 4
+      }
+    ],
+    "specs": {
+      "type": "Over-ear",
+      "wireless": true,
+      "battery": "16h playback"
+    },
+    "discount": 0.05,
+    "tags": [
+      "portable",
+      "ios",
+      "wireless"
+    ],
+    "image": "/images/products/headphones-2.jpg",
+    "images": [
+      "/images/products/headphones-2-1.jpg",
+      "/images/products/headphones-2-2.jpg",
+      "/images/products/headphones-2-3.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Lenovo Headphones 536",
+    "description": "High-quality headphones by Lenovo.",
+    "longDescription": "The Lenovo headphones is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "headphones",
+    "brand": "Lenovo",
+    "price": 1936.56,
+    "stock": 23,
+    "rating": 2.7,
+    "reviews": [
+      {
+        "user": "Diana",
+        "comment": "Pretty decent for the price.",
+        "rating": 4
+      }
+    ],
+    "specs": {
+      "type": "Over-ear",
+      "wireless": false,
+      "battery": "14h playback"
+    },
+    "discount": 0.15,
+    "tags": [
+      "wireless",
+      "mechanical",
+      "ios",
+      "android"
+    ],
+    "image": "/images/products/headphones-3.jpg",
+    "images": [
+      "/images/products/headphones-3-1.jpg",
+      "/images/products/headphones-3-2.jpg",
+      "/images/products/headphones-3-3.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Lenovo Keyboards 217",
+    "description": "High-quality keyboards by Lenovo.",
+    "longDescription": "The Lenovo keyboards is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "keyboards",
+    "brand": "Lenovo",
+    "price": 1996.04,
+    "stock": 8,
+    "rating": 3.7,
+    "reviews": [
+      {
+        "user": "Charlie",
+        "comment": "Five stars, no complaints.",
+        "rating": 5
+      }
+    ],
+    "specs": {
+      "type": "Mechanical",
+      "backlight": true,
+      "connectivity": "Wired"
+    },
+    "discount": 0.05,
+    "tags": [
+      "portable",
+      "android",
+      "mechanical",
+      "5g"
+    ],
+    "image": "/images/products/keyboards-4.jpg",
+    "images": [
+      "/images/products/keyboards-4-1.jpg",
+      "/images/products/keyboards-4-2.jpg",
+      "/images/products/keyboards-4-3.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "HP Keyboards 994",
+    "description": "High-quality keyboards by HP.",
+    "longDescription": "The HP keyboards is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "keyboards",
+    "brand": "HP",
+    "price": 123.54,
+    "stock": 25,
+    "rating": 3.4,
+    "reviews": [
+      {
+        "user": "Fiona",
+        "comment": "Five stars, no complaints.",
+        "rating": 3
+      },
+      {
+        "user": "Fiona",
+        "comment": "Not as expected.",
+        "rating": 3
+      },
+      {
+        "user": "Diana",
+        "comment": "Not as expected.",
+        "rating": 3
+      }
+    ],
+    "specs": {
+      "type": "Mechanical",
+      "backlight": true,
+      "connectivity": "Wireless"
+    },
+    "discount": 0,
+    "tags": [
+      "ios",
+      "ultrawide"
+    ],
+    "image": "/images/products/keyboards-5.jpg",
+    "images": [
+      "/images/products/keyboards-5-1.jpg",
+      "/images/products/keyboards-5-2.jpg",
+      "/images/products/keyboards-5-3.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Lenovo Monitors 121",
+    "description": "High-quality monitors by Lenovo.",
+    "longDescription": "The Lenovo monitors is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "monitors",
+    "brand": "Lenovo",
+    "price": 1871.16,
+    "stock": 26,
+    "rating": 4.6,
+    "reviews": [
+      {
+        "user": "Ethan",
+        "comment": "Excellent quality, would buy again.",
+        "rating": 5
+      },
+      {
+        "user": "Ethan",
+        "comment": "Five stars, no complaints.",
+        "rating": 4
+      }
+    ],
+    "specs": {
+      "size": "29 inches",
+      "resolution": "1440p",
+      "refreshRate": "120Hz"
+    },
+    "discount": 0.15,
+    "tags": [
+      "ultrawide",
+      "bluetooth",
+      "portable",
+      "mechanical"
+    ],
+    "image": "/images/products/monitors-6.jpg",
+    "images": [
+      "/images/products/monitors-6-1.jpg",
+      "/images/products/monitors-6-2.jpg",
+      "/images/products/monitors-6-3.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Lenovo Headphones 141",
+    "description": "High-quality headphones by Lenovo.",
+    "longDescription": "The Lenovo headphones is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "headphones",
+    "brand": "Lenovo",
+    "price": 2312.88,
+    "stock": 49,
+    "rating": 3.0,
+    "reviews": [
+      {
+        "user": "Diana",
+        "comment": "Not as expected.",
+        "rating": 3
+      },
+      {
+        "user": "Alice",
+        "comment": "Battery life could be better.",
+        "rating": 3
+      }
+    ],
+    "specs": {
+      "type": "On-ear",
+      "wireless": true,
+      "battery": "21h playback"
+    },
+    "discount": 0.1,
+    "tags": [
+      "gaming",
+      "android",
+      "wireless"
+    ],
+    "image": "/images/products/headphones-7.jpg",
+    "images": [
+      "/images/products/headphones-7-1.jpg",
+      "/images/products/headphones-7-2.jpg",
+      "/images/products/headphones-7-3.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Apple Laptops 590",
+    "description": "High-quality laptops by Apple.",
+    "longDescription": "The Apple laptops is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "laptops",
+    "brand": "Apple",
+    "price": 2071.69,
+    "stock": 14,
+    "rating": 3.0,
+    "reviews": [
+      {
+        "user": "Bob",
+        "comment": "Excellent quality, would buy again.",
+        "rating": 4
+      }
+    ],
+    "specs": {
+      "display": "17-inch IPS",
+      "storage": "1024GB SSD",
+      "ram": "8GB",
+      "cpu": "Intel i7"
+    },
+    "discount": 0.1,
+    "tags": [
+      "5g",
+      "bluetooth",
+      "ios",
+      "portable"
+    ],
+    "image": "/images/products/laptops-8.jpg",
+    "images": [
+      "/images/products/laptops-8-1.jpg",
+      "/images/products/laptops-8-2.jpg",
+      "/images/products/laptops-8-3.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Dell Smartphones 534",
+    "description": "High-quality smartphones by Dell.",
+    "longDescription": "The Dell smartphones is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "smartphones",
+    "brand": "Dell",
+    "price": 1754.36,
+    "stock": 29,
+    "rating": 4.4,
+    "reviews": [
+      {
+        "user": "Charlie",
+        "comment": "Pretty decent for the price.",
+        "rating": 3
+      },
+      {
+        "user": "Bob",
+        "comment": "Excellent quality, would buy again.",
+        "rating": 4
+      }
+    ],
+    "specs": {
+      "display": "7-inch AMOLED",
+      "storage": "256GB",
+      "camera": "74MP",
+      "battery": "4930mAh"
+    },
+    "discount": 0.05,
+    "tags": [
+      "android",
+      "5g",
+      "ultrawide"
+    ],
+    "image": "/images/products/smartphones-9.jpg",
+    "images": [
+      "/images/products/smartphones-9-1.jpg",
+      "/images/products/smartphones-9-2.jpg",
+      "/images/products/smartphones-9-3.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Lenovo Headphones 916",
+    "description": "High-quality headphones by Lenovo.",
+    "longDescription": "The Lenovo headphones is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "headphones",
+    "brand": "Lenovo",
+    "price": 246.74,
+    "stock": 17,
+    "rating": 3.4,
+    "reviews": [
+      {
+        "user": "Fiona",
+        "comment": "Five stars, no complaints.",
+        "rating": 5
+      }
+    ],
+    "specs": {
+      "type": "In-ear",
+      "wireless": false,
+      "battery": "35h playback"
+    },
+    "discount": 0.05,
+    "tags": [
+      "ios",
+      "mechanical"
+    ],
+    "image": "/images/products/headphones-10.jpg",
+    "images": [
+      "/images/products/headphones-10-1.jpg",
+      "/images/products/headphones-10-2.jpg",
+      "/images/products/headphones-10-3.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Samsung Headphones 221",
+    "description": "High-quality headphones by Samsung.",
+    "longDescription": "The Samsung headphones is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "headphones",
+    "brand": "Samsung",
+    "price": 2029.99,
+    "stock": 37,
+    "rating": 2.9,
+    "reviews": [
+      {
+        "user": "Charlie",
+        "comment": "Amazing product!",
+        "rating": 3
+      },
+      {
+        "user": "Bob",
+        "comment": "Excellent quality, would buy again.",
+        "rating": 5
+      },
+      {
+        "user": "Diana",
+        "comment": "Not as expected.",
+        "rating": 4
+      }
+    ],
+    "specs": {
+      "type": "Over-ear",
+      "wireless": false,
+      "battery": "14h playback"
+    },
+    "discount": 0.15,
+    "tags": [
+      "gaming",
+      "5g",
+      "portable"
+    ],
+    "image": "/images/products/headphones-11.jpg",
+    "images": [
+      "/images/products/headphones-11-1.jpg",
+      "/images/products/headphones-11-2.jpg",
+      "/images/products/headphones-11-3.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Logitech Monitors 289",
+    "description": "High-quality monitors by Logitech.",
+    "longDescription": "The Logitech monitors is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "monitors",
+    "brand": "Logitech",
+    "price": 2389.68,
+    "stock": 5,
+    "rating": 5.0,
+    "reviews": [
+      {
+        "user": "Charlie",
+        "comment": "Pretty decent for the price.",
+        "rating": 4
+      },
+      {
+        "user": "Charlie",
+        "comment": "Battery life could be better.",
+        "rating": 4
+      }
+    ],
+    "specs": {
+      "size": "27 inches",
+      "resolution": "1080p",
+      "refreshRate": "60Hz"
+    },
+    "discount": 0.1,
+    "tags": [
+      "ultrawide",
+      "portable",
+      "5g"
+    ],
+    "image": "/images/products/monitors-12.jpg",
+    "images": [
+      "/images/products/monitors-12-1.jpg",
+      "/images/products/monitors-12-2.jpg",
+      "/images/products/monitors-12-3.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Logitech Monitors 358",
+    "description": "High-quality monitors by Logitech.",
+    "longDescription": "The Logitech monitors is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "monitors",
+    "brand": "Logitech",
+    "price": 2423.75,
+    "stock": 33,
+    "rating": 4.7,
+    "reviews": [
+      {
+        "user": "Charlie",
+        "comment": "Not as expected.",
+        "rating": 5
+      },
+      {
+        "user": "Ethan",
+        "comment": "Pretty decent for the price.",
+        "rating": 3
+      }
+    ],
+    "specs": {
+      "size": "24 inches",
+      "resolution": "1440p",
+      "refreshRate": "120Hz"
+    },
+    "discount": 0,
+    "tags": [
+      "mechanical",
+      "wireless",
+      "gaming"
+    ],
+    "image": "/images/products/monitors-13.jpg",
+    "images": [
+      "/images/products/monitors-13-1.jpg",
+      "/images/products/monitors-13-2.jpg",
+      "/images/products/monitors-13-3.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Apple Keyboards 327",
+    "description": "High-quality keyboards by Apple.",
+    "longDescription": "The Apple keyboards is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "keyboards",
+    "brand": "Apple",
+    "price": 1462.57,
+    "stock": 35,
+    "rating": 2.7,
+    "reviews": [
+      {
+        "user": "Alice",
+        "comment": "Pretty decent for the price.",
+        "rating": 5
+      }
+    ],
+    "specs": {
+      "type": "Membrane",
+      "backlight": false,
+      "connectivity": "Wired"
+    },
+    "discount": 0,
+    "tags": [
+      "5g",
+      "mechanical",
+      "android"
+    ],
+    "image": "/images/products/keyboards-14.jpg",
+    "images": [
+      "/images/products/keyboards-14-1.jpg",
+      "/images/products/keyboards-14-2.jpg",
+      "/images/products/keyboards-14-3.jpg"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Dell Monitors 278",
+    "description": "High-quality monitors by Dell.",
+    "longDescription": "The Dell monitors is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "monitors",
+    "brand": "Dell",
+    "price": 1878.53,
+    "stock": 43,
+    "rating": 3.6,
+    "reviews": [
+      {
+        "user": "Bob",
+        "comment": "Excellent quality, would buy again.",
+        "rating": 5
+      },
+      {
+        "user": "Fiona",
+        "comment": "Pretty decent for the price.",
+        "rating": 3
+      },
+      {
+        "user": "Ethan",
+        "comment": "Not as expected.",
+        "rating": 5
+      }
+    ],
+    "specs": {
+      "size": "32 inches",
+      "resolution": "1080p",
+      "refreshRate": "240Hz"
+    },
+    "discount": 0.05,
+    "tags": [
+      "ultrawide",
+      "mechanical",
+      "wireless"
+    ],
+    "image": "/images/products/monitors-15.jpg",
+    "images": [
+      "/images/products/monitors-15-1.jpg",
+      "/images/products/monitors-15-2.jpg",
+      "/images/products/monitors-15-3.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Sony Laptops 351",
+    "description": "High-quality laptops by Sony.",
+    "longDescription": "The Sony laptops is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "laptops",
+    "brand": "Sony",
+    "price": 2341.08,
+    "stock": 36,
+    "rating": 3.6,
+    "reviews": [
+      {
+        "user": "Alice",
+        "comment": "Amazing product!",
+        "rating": 4
+      },
+      {
+        "user": "Bob",
+        "comment": "Battery life could be better.",
+        "rating": 5
+      }
+    ],
+    "specs": {
+      "display": "14-inch IPS",
+      "storage": "1024GB SSD",
+      "ram": "8GB",
+      "cpu": "Intel i5"
+    },
+    "discount": 0.15,
+    "tags": [
+      "portable",
+      "wireless",
+      "ios"
+    ],
+    "image": "/images/products/laptops-16.jpg",
+    "images": [
+      "/images/products/laptops-16-1.jpg",
+      "/images/products/laptops-16-2.jpg",
+      "/images/products/laptops-16-3.jpg"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Apple Laptops 443",
+    "description": "High-quality laptops by Apple.",
+    "longDescription": "The Apple laptops is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "laptops",
+    "brand": "Apple",
+    "price": 1991.06,
+    "stock": 48,
+    "rating": 3.7,
+    "reviews": [
+      {
+        "user": "Diana",
+        "comment": "Excellent quality, would buy again.",
+        "rating": 3
+      },
+      {
+        "user": "Bob",
+        "comment": "Battery life could be better.",
+        "rating": 3
+      }
+    ],
+    "specs": {
+      "display": "14-inch IPS",
+      "storage": "1024GB SSD",
+      "ram": "32GB",
+      "cpu": "Intel i7"
+    },
+    "discount": 0.1,
+    "tags": [
+      "wireless",
+      "mechanical",
+      "portable"
+    ],
+    "image": "/images/products/laptops-17.jpg",
+    "images": [
+      "/images/products/laptops-17-1.jpg",
+      "/images/products/laptops-17-2.jpg",
+      "/images/products/laptops-17-3.jpg"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "HP Keyboards 586",
+    "description": "High-quality keyboards by HP.",
+    "longDescription": "The HP keyboards is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "keyboards",
+    "brand": "HP",
+    "price": 2460.79,
+    "stock": 13,
+    "rating": 3.7,
+    "reviews": [
+      {
+        "user": "Bob",
+        "comment": "Not as expected.",
+        "rating": 5
+      },
+      {
+        "user": "Charlie",
+        "comment": "Battery life could be better.",
+        "rating": 3
+      },
+      {
+        "user": "Bob",
+        "comment": "Excellent quality, would buy again.",
+        "rating": 4
+      }
+    ],
+    "specs": {
+      "type": "Mechanical",
+      "backlight": false,
+      "connectivity": "Wireless"
+    },
+    "discount": 0.15,
+    "tags": [
+      "wireless",
+      "mechanical",
+      "ultrawide",
+      "bluetooth"
+    ],
+    "image": "/images/products/keyboards-18.jpg",
+    "images": [
+      "/images/products/keyboards-18-1.jpg",
+      "/images/products/keyboards-18-2.jpg",
+      "/images/products/keyboards-18-3.jpg"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Samsung Smartphones 519",
+    "description": "High-quality smartphones by Samsung.",
+    "longDescription": "The Samsung smartphones is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "smartphones",
+    "brand": "Samsung",
+    "price": 303.39,
+    "stock": 48,
+    "rating": 4.5,
+    "reviews": [
+      {
+        "user": "Ethan",
+        "comment": "Not as expected.",
+        "rating": 3
+      },
+      {
+        "user": "Bob",
+        "comment": "Pretty decent for the price.",
+        "rating": 3
+      },
+      {
+        "user": "Diana",
+        "comment": "Pretty decent for the price.",
+        "rating": 3
+      }
+    ],
+    "specs": {
+      "display": "7-inch AMOLED",
+      "storage": "64GB",
+      "camera": "25MP",
+      "battery": "3680mAh"
+    },
+    "discount": 0.15,
+    "tags": [
+      "gaming",
+      "portable"
+    ],
+    "image": "/images/products/smartphones-19.jpg",
+    "images": [
+      "/images/products/smartphones-19-1.jpg",
+      "/images/products/smartphones-19-2.jpg",
+      "/images/products/smartphones-19-3.jpg"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Sony Headphones 750",
+    "description": "High-quality headphones by Sony.",
+    "longDescription": "The Sony headphones is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
+    "category": "headphones",
+    "brand": "Sony",
+    "price": 1941.49,
+    "stock": 25,
+    "rating": 4.4,
+    "reviews": [
+      {
+        "user": "Diana",
+        "comment": "Battery life could be better.",
+        "rating": 3
+      }
+    ],
+    "specs": {
+      "type": "In-ear",
+      "wireless": true,
+      "battery": "21h playback"
+    },
+    "discount": 0,
+    "tags": [
+      "wireless",
+      "mechanical"
+    ],
+    "image": "/images/products/headphones-20.jpg",
+    "images": [
+      "/images/products/headphones-20-1.jpg",
+      "/images/products/headphones-20-2.jpg",
+      "/images/products/headphones-20-3.jpg"
+    ]
+  },
+
+  {
+    "id": 21,
+    "name": "Apple Watch Series 9",
+    "description": "Premium smartwatch by Apple.",
+    "longDescription": "The Apple Watch Series 9 comes with advanced health tracking, GPS, and seamless integration with iOS devices.",
+    "category": "smartwatches",
+    "brand": "Apple",
+    "price": 499.99,
+    "stock": 120,
+    "rating": 4.9,
+    "reviews": [
+      {
+        "user": "Sophia",
+        "comment": "Best smartwatch I’ve ever owned.",
+        "rating": 5
+      }
+    ],
+    "specs": {
+      "screenSize": "1.9 inches",
+      "batteryLife": "18 hours",
+      "waterResistance": "50m"
+    },
+    "discount": 0.1,
+    "tags": ["ios", "fitness", "health"],
+    "image": "/images/products/smartwatch-apple-9.jpg",
+    "images": [
+      "/images/products/smartwatch-apple-9-1.jpg",
+      "/images/products/smartwatch-apple-9-2.jpg"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Samsung Galaxy Tab S9",
+    "description": "High-end Android tablet.",
+    "longDescription": "The Galaxy Tab S9 offers an immersive display, S Pen support, and powerful performance for work and play.",
+    "category": "tablets",
+    "brand": "Samsung",
+    "price": 899.00,
+    "stock": 65,
+    "rating": 4.6,
+    "reviews": [
+      {
+        "user": "Liam",
+        "comment": "Super fast and the screen is gorgeous.",
+        "rating": 5
+      }
+    ],
+    "specs": {
+      "screenSize": "12.4 inches",
+      "storage": "256GB",
+      "ram": "12GB"
+    },
+    "discount": 0.15,
+    "tags": ["android", "stylus", "amoled"],
+    "image": "/images/products/tablet-samsung-s9.jpg",
+    "images": [
+      "/images/products/tablet-samsung-s9-1.jpg",
+      "/images/products/tablet-samsung-s9-2.jpg"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Razer DeathAdder V3 Pro",
+    "description": "Ultra-lightweight gaming mouse.",
+    "longDescription": "Razer’s iconic DeathAdder upgraded with cutting-edge wireless tech, perfect for competitive gamers.",
+    "category": "mice",
+    "brand": "Razer",
+    "price": 149.99,
+    "stock": 200,
+    "rating": 4.7,
+    "reviews": [
+      {
+        "user": "Noah",
+        "comment": "So light, I forget I’m holding it.",
+        "rating": 5
+      }
+    ],
+    "specs": {
+      "dpi": "30000",
+      "connection": "Wireless",
+      "batteryLife": "90 hours"
+    },
+    "discount": 0.05,
+    "tags": ["gaming", "lightweight", "ergonomic"],
+    "image": "/images/products/mouse-razer-deathadder.jpg",
+    "images": [
+      "/images/products/mouse-razer-deathadder-1.jpg",
+      "/images/products/mouse-razer-deathadder-2.jpg"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Microsoft Surface Pro 9",
+    "description": "Versatile 2-in-1 laptop tablet.",
+    "longDescription": "Surface Pro 9 delivers a seamless Windows 11 experience in a portable design with pen and keyboard support.",
+    "category": "tablets",
+    "brand": "Microsoft",
+    "price": 1299.99,
+    "stock": 50,
+    "rating": 4.5,
+    "reviews": [
+      {
+        "user": "Emma",
+        "comment": "Perfect for work and study.",
+        "rating": 4
+      }
+    ],
+    "specs": {
+      "screenSize": "13 inches",
+      "storage": "512GB",
+      "ram": "16GB"
+    },
+    "discount": 0.08,
+    "tags": ["windows", "stylus", "productivity"],
+    "image": "/images/products/tablet-surface-pro-9.jpg",
+    "images": [
+      "/images/products/tablet-surface-pro-9-1.jpg",
+      "/images/products/tablet-surface-pro-9-2.jpg"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Fitbit Versa 4",
+    "description": "Affordable fitness smartwatch.",
+    "longDescription": "The Fitbit Versa 4 tracks your workouts, sleep, and heart rate with a lightweight design for daily wear.",
+    "category": "smartwatches",
+    "brand": "Fitbit",
+    "price": 229.95,
+    "stock": 300,
+    "rating": 4.3,
+    "reviews": [
+      {
+        "user": "Mason",
+        "comment": "Does everything I need for fitness.",
+        "rating": 4
+      }
+    ],
+    "specs": {
+      "screenSize": "1.6 inches",
+      "batteryLife": "6 days",
+      "waterResistance": "50m"
+    },
+    "discount": 0.12,
+    "tags": ["fitness", "budget", "lightweight"],
+    "image": "/images/products/smartwatch-fitbit-versa.jpg",
+    "images": [
+      "/images/products/smartwatch-fitbit-versa-1.jpg",
+      "/images/products/smartwatch-fitbit-versa-2.jpg"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Logitech MX Master 3S",
+    "description": "Ergonomic productivity mouse.",
+    "longDescription": "The MX Master 3S offers precision scrolling, customizable buttons, and excellent ergonomics for long work sessions.",
+    "category": "mice",
+    "brand": "Logitech",
+    "price": 129.99,
+    "stock": 180,
+    "rating": 4.8,
+    "reviews": [
+      {
+        "user": "Olivia",
+        "comment": "My go-to mouse for everything.",
+        "rating": 5
+      }
+    ],
+    "specs": {
+      "dpi": "8000",
+      "connection": "Bluetooth & Wireless",
+      "batteryLife": "70 days"
+    },
+    "discount": 0.07,
+    "tags": ["ergonomic", "productivity", "silent"],
+    "image": "/images/products/mouse-logitech-mx.jpg",
+    "images": [
+      "/images/products/mouse-logitech-mx-1.jpg",
+      "/images/products/mouse-logitech-mx-2.jpg"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Garmin Forerunner 265",
+    "description": "Advanced GPS smartwatch.",
+    "longDescription": "The Garmin Forerunner 265 is designed for runners with detailed GPS tracking, performance insights, and long battery life.",
+    "category": "smartwatches",
+    "brand": "Garmin",
+    "price": 449.99,
+    "stock": 90,
+    "rating": 4.6,
+    "reviews": [
+      {
+        "user": "Ava",
+        "comment": "Best for running and outdoor workouts.",
+        "rating": 5
+      }
+    ],
+    "specs": {
+      "screenSize": "1.3 inches",
+      "batteryLife": "15 days",
+      "gps": "Yes"
+    },
+    "discount": 0.1,
+    "tags": ["gps", "fitness", "outdoor"],
+    "image": "/images/products/smartwatch-garmin-265.jpg",
+    "images": [
+      "/images/products/smartwatch-garmin-265-1.jpg",
+      "/images/products/smartwatch-garmin-265-2.jpg"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Wacom Cintiq Pro 16",
+    "description": "Professional pen display tablet.",
+    "longDescription": "The Wacom Cintiq Pro 16 is built for artists with an ultra-responsive pen, high-resolution display, and customizable shortcuts.",
+    "category": "tablets",
+    "brand": "Wacom",
+    "price": 1599.99,
+    "stock": 25,
+    "rating": 4.9,
+    "reviews": [
+      {
+        "user": "Isabella",
+        "comment": "Incredible for digital art.",
+        "rating": 5
+      }
+    ],
+    "specs": {
+      "screenSize": "16 inches",
+      "resolution": "4K",
+      "pen": "Pro Pen 2"
+    },
+    "discount": 0.05,
+    "tags": ["drawing", "professional", "pen"],
+    "image": "/images/products/tablet-wacom-cintiq.jpg",
+    "images": [
+      "/images/products/tablet-wacom-cintiq-1.jpg",
+      "/images/products/tablet-wacom-cintiq-2.jpg"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "SteelSeries Aerox 5 Wireless",
+    "description": "Lightweight RGB gaming mouse.",
+    "longDescription": "The Aerox 5 Wireless combines ultra-low latency with customizable RGB lighting and extreme lightweight design.",
+    "category": "mice",
+    "brand": "SteelSeries",
+    "price": 139.99,
+    "stock": 150,
+    "rating": 4.4,
+    "reviews": [
+      {
+        "user": "James",
+        "comment": "Feels like air in my hand.",
+        "rating": 4
+      }
+    ],
+    "specs": {
+      "dpi": "18000",
+      "connection": "Wireless",
+      "batteryLife": "80 hours"
+    },
+    "discount": 0.09,
+    "tags": ["gaming", "rgb", "wireless"],
+    "image": "/images/products/mouse-steelseries-aerox.jpg",
+    "images": [
+      "/images/products/mouse-steelseries-aerox-1.jpg",
+      "/images/products/mouse-steelseries-aerox-2.jpg"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Huawei MatePad Pro",
+    "description": "Premium Android tablet with stylus.",
+    "longDescription": "The Huawei MatePad Pro delivers sleek design, vibrant display, and smooth performance for professionals and students alike.",
+    "category": "tablets",
+    "brand": "Huawei",
+    "price": 749.99,
+    "stock": 70,
+    "rating": 4.5,
+    "reviews": [
+      {
+        "user": "Amelia",
+        "comment": "Great balance of features and price.",
+        "rating": 4
+      }
+    ],
+    "specs": {
+      "screenSize": "12.6 inches",
+      "storage": "128GB",
+      "ram": "8GB"
+    },
+    "discount": 0.1,
+    "tags": ["android", "stylus", "portable"],
+    "image": "/images/products/tablet-huawei-matepad.jpg",
+    "images": [
+      "/images/products/tablet-huawei-matepad-1.jpg",
+      "/images/products/tablet-huawei-matepad-2.jpg"
+    ]
+  }
+]

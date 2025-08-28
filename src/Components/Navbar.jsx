@@ -1,14 +1,17 @@
 import SauSauLogo from '../assets/SauSauLogo2.png' 
 import NavLink from './NavLinks'
-import { useState} from "react"
+import { useState, useContext} from "react"
+import {SearchBarContext} from '../Context/SearchBarContext'
 import { PiShoppingCartFill } from "react-icons/pi";
 import { IoSearchOutline } from "react-icons/io5";
 
 export default function Navbar(){
     const [openBar, setOpenBar]=  useState(false)
+    const {keyWord, handleChange}=useContext(SearchBarContext)
     const toggleSearchBar= ()=>{
         setOpenBar(prev => !prev)
     }
+
 
     return(
         <nav className='relative'>
@@ -24,17 +27,15 @@ export default function Navbar(){
                         <NavLink text="CheckOut" path="#chackout" />
                         <NavLink text="Contact" path="#contact" />
                         <NavLink text="About" path="#about" />
-                            
-
                     </ul>
                 </div>
 
                 <ul className='flex justify-between items-center basis-1/12'>
                     <li><PiShoppingCartFill /> </li>
                     {openBar &&
-                    <input type="text" className='rounded' />}
-                    <button>
-                    <li onClick={toggleSearchBar}><IoSearchOutline /> </li>
+                    <input type="text" className='rounded-md'  onChange={handleChange}/>}
+                    <button onClick={toggleSearchBar}>
+                    <li ><IoSearchOutline /> </li>
                     </button>
                 </ul>
             </div>

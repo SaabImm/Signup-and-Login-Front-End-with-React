@@ -29,27 +29,7 @@
     {
         "id": 5,
         "description": "Mouses",
-        "category": "mice"
-    },
-    {
-        "id": 6,
-        "description": "Mouses",
-        "category": "mouses"
-    },
-        {
-        "id": 7,
-        "description": "Mouses",
-        "category": "mouses"
-    },
-        {
-        "id": 8,
-        "description": "Mouses",
-        "category": "mice"
-    },
-        {
-        "id": 9,
-        "description": "Mouses",
-        "category": "mice"
+        "category": "laptop Mouse"
     }
 
     ]
