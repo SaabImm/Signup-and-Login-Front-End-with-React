@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "name": "Logitech Monitors 230",
-    "description": "High-quality monitors by Logitech.",
-    "longDescription": "The Logitech monitors is designed for top performance and modern style. Equipped with cutting-edge features to make your daily tasks smoother.",
-    "category": "monitors",
-    "brand": "Logitech",
+    "name": "Airpod Max",
+    "description": "High-quality airpods by Apple.",
+    "longDescription": "Premium over-ear headphones with immersive sound, noise cancellation, and all-day comfort.",
+    "category": "headphones",
+    "brand": "apple",
     "price": 1053.76,
     "stock": 36,
     "rating": 4.8,
@@ -26,6 +26,7 @@
       "wireless",
       "ultrawide"
     ],
+    "colors": ["black", "gray-400", "blue-500"],
     "image": "/images/products/monitors-1.jpg",
     "images": [
       "/images/products/monitors-1-1.jpg",

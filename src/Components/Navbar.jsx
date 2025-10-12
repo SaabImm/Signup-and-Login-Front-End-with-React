@@ -1,41 +1,57 @@
 import SauSauLogo from '../assets/SauSauLogo2.png' 
 import NavLink from './NavLinks'
+import CategoriesMenue from './CategoriesMenue';
+import { Link } from "react-router-dom";
 import { useState, useContext} from "react"
 import {SearchBarContext} from '../Context/SearchBarContext'
 import { PiShoppingCartFill } from "react-icons/pi";
 import { IoSearchOutline } from "react-icons/io5";
+import data from '../MockDataAPI/products.json'
 
 export default function Navbar(){
-    const [openBar, setOpenBar]=  useState(false)
+    const [isOpenBar, setIsOpenBar]=  useState(false)
+    const [isOpenMenue, setIsOpenMenue]=useState(false)
     const {keyWord, handleChange}=useContext(SearchBarContext)
     const toggleSearchBar= ()=>{
-        setOpenBar(prev => !prev)
+        setIsOpenBar(prev => !prev)
     }
 
-
+        const categoryArray=[]
+        data.map((item) =>{
+            if(!categoryArray.includes(item.category))
+            categoryArray.push(item.category)
+        })
     return(
-        <nav className='relative'>
-            <div className='fixed backdrop-blur-[10px] top-0 right-0 left-0 z-50 flex justify-between items-center px-12 py-4'>
-                <div className='w-10'>
-                <img src={SauSauLogo} alt="Sau Sau Logo" className='rounded-xl'/>
-                </div>
+        <nav className='NavBar '>
+            <div className='top-0 right-0 left-0 flex justify-between items-center rounded-b-lg px-12 py-2 text-[#383838] text-shadow-lg/30'>
+                <Link to='/'>
+                <img src={SauSauLogo} alt="Sau Sau Logo" className='rounded-xl w-10'/>
+                </Link>
 
-                <div className='basis-1/2' >
-                    <ul className='flex justify-between items-center '>
-                        <NavLink text="Home" path="#home" />
-                        <NavLink text="Shop" path="#shop" />  
-                        <NavLink text="CheckOut" path="#chackout" />
+                <div className='NavLinks ' >
+                    <ul className='flex justify-between items-center gap-5'>
+                        <NavLink text="Home" path='/'/> 
+                        <NavLink text="Shop" path="#categories" />  
+                        <div className='DropDowMenue relative '>
+                            <button onClick={()=> {setIsOpenMenue(prev => !prev)}}>
+                                <NavLink text="Categories" /> 
+                            </button>
+                            
+                            {isOpenMenue &&
+                                <CategoriesMenue categoryArray={categoryArray} />
+                            }
+                        </div>
                         <NavLink text="Contact" path="#contact" />
                         <NavLink text="About" path="#about" />
                     </ul>
                 </div>
 
-                <ul className='flex justify-between items-center basis-1/12'>
-                    <li><PiShoppingCartFill /> </li>
-                    {openBar &&
-                    <input type="text" className='rounded-md'  onChange={handleChange}/>}
+                <ul className='flex justify-between gap-6 items-center'>
+                    <li><PiShoppingCartFill size={20} /> </li>
+                    {isOpenBar &&
+                    <input type="text" className="rounded-md border px-2 py-1 ml-2 outline-none font-[Montserrat,sans-serif]"   onChange={handleChange}/>}
                     <button onClick={toggleSearchBar}>
-                    <li ><IoSearchOutline /> </li>
+                    <li ><IoSearchOutline  size={20}/> </li>
                     </button>
                 </ul>
             </div>

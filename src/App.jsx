@@ -1,25 +1,23 @@
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from './Pages/HomePage'
-import Navbar from './Components/Navbar'
-import ProducListing from './Pages/ProductListing'
-import CategoriesCarousel from './Components/Category'
-import ItemCard from './Components/ItemCards'
-import { SearchBarContext } from './Context/SearchBarContext'
-import { useContext } from 'react'
+import MainLayout from './Layouts/MainLayout';
 import data from './MockDataAPI/products.json'
+import ProductDetail from './Pages/ProductDetail'
 
 export default function App() {
-  const {keyWord}=useContext(SearchBarContext)
-
   return (
-    <>
-    
-    <section > <Navbar />  </section>
-    <section id='home'> <HomePage />  </section>
-    <CategoriesCarousel/>
-    {/*<ItemCard data={data[0]} />*/}
+    <Router>
+      
+      <Routes>
+        <Route  element={<MainLayout/>}>
+        {/* Home route */}
+        <Route path="/" element={<HomePage /> }/>
 
-    </>
+        {/* Product detail route */}
+        <Route path="/product/:id" element={<ProductDetail item={data[0]} />} />
+        </Route>
+      </Routes>
+    </Router>
   )
 }
-

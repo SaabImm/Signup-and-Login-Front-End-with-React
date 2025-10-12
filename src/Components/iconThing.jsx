@@ -5,24 +5,24 @@ import { FiSmartphone } from "react-icons/fi";
 import { RxKeyboard } from "react-icons/rx";
 
 
-export default function IconsThing({ctg}){
+export default function IconsThing({ctg, sz, clr}){
      switch (ctg) {
                 case 'monitors':
-                    return  <CiMonitor  size={50} color="#576969"/>  
+                    return  <CiMonitor  size={sz} color={clr}/>  
                 case 'headphones':
-                    return  <BsHeadphones  size={50} color="#576969" />  ;
+                    return  <BsHeadphones  size={sz} color={clr} />  ;
                 case 'keyboards':
-                    return   <RxKeyboard  size={50} color="#576969" /> ;
+                    return   <RxKeyboard  size={sz} color={clr} /> ;
                 case 'laptops':
-                    return  <IoIosLaptop   size={50} color="#576969" /> ;
+                    return  <IoIosLaptop   size={sz} color={clr} /> ;
                 case 'smartphones':
-                    return  <FiSmartphone  size={50} color="#576969"/> ;
+                    return  <FiSmartphone  size={sz} color={clr}/> ;
                 case 'smartwatches':
-                    return  <BsSmartwatch   size={50} color="#576969"/> ;
+                    return  <BsSmartwatch   size={sz} color={clr}/> ;       
                 case 'mice':
-                    return  <CiDesktopMouse2   size={50} color="#576969"/> ;
+                    return  <CiDesktopMouse2   size={sz} color={clr}/> ;
                 case 'tablets':
-                    return  <BsTablet   size={50} color="#576969"/> ;
+                    return  <BsTablet   size={sz} color={clr}/> ;
                 default:
                 return null;
             }

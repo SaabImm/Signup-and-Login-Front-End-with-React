@@ -1,7 +1,6 @@
-import { useState, useContext} from "react"
 import iphonePicture from '../assets/iphone.jpg'
-import { IoIosStar, IoIosStarOutline, IoIosStarHalf  } from "react-icons/io";
 import Rating from "./Rating";
+import { Link } from "react-router-dom";
 
 export default function ItemCard({data}){
     return(
@@ -32,12 +31,16 @@ export default function ItemCard({data}){
                       <Rating rating={data.rating}/>
                       </div>
                       <div className="buttonContainer flex justify-between items-center gap-4">
-                          <button className="AddToCart flex-1 border-2 font-medium p-2 text-sm rounded-2xl bg-[#334A4F] text-white hover:border-[#334A4F] hover:text-[#334A4F] hover:bg-white transition duration-200">
-                              Add to Cart
-                          </button>
+                          <button  className="AddToCart flex-1 border-2 font-medium p-2 text-sm rounded-2xl bg-[#334A4F] text-white hover:border-[#334A4F] hover:text-[#334A4F] hover:bg-white transition duration-200">
+                              Add to Cart  
+                              </button>
+                          
                           <button className="ViewDetails flex-1 font-medium border-2 border-[#334A4F] p-2 text-sm rounded-2xl hover:bg-[#334A4F] hover:text-white transition duration-200">
+                            <Link to={`/product/${data.id}`}>
                               View Details
+                            </Link>
                           </button>
+                          
                       </div>
                   </div>
 

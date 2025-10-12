@@ -1,33 +1,32 @@
 import { useState } from "react"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation} from "swiper/modules";
-import { MdKeyboardDoubleArrowRight, MdKeyboardDoubleArrowLeft} from "react-icons/md";
 import ProducListing from "../Pages/ProductListing"
-import data from '../MockDataAPI/products.json'
 import "swiper/css/navigation";
 import "swiper/css";
 import IconsThing from "./iconThing";
+import SectionTitle from "./Title";
+import data from '../MockDataAPI/products.json'
 
 export default function CategoriesCarousel(){
     const [category, setCategory]= useState('')
-    const categoryArray=[]
-    data.map((item) =>{
-        if(!categoryArray.includes(item.category))
-        categoryArray.push(item.category)
-    })
+        const categoryArray=[]
+        data.map((item) =>{
+            if(!categoryArray.includes(item.category))
+            categoryArray.push(item.category)
+        })
     
     return(
         <>
-        <section className="ImageGallery relative flex  py-2  h-full justify-start backdrop-blur-lg ">
+        <SectionTitle title='Shop by Category'/>
+        <div className="CategCaroussel relative flex  py-2  h-full justify-start backdrop-blur-lg ">
+            
             <Swiper 
                 modules={[Navigation]} 
-                spaceBetween={10} 
-                slidesPerView={6} 
+                spaceBetween={5} 
+                slidesPerView={8} 
                 loop={false} 
-                navigation={{
-                nextEl: ".custom-next",
-                prevEl: ".custom-prev",
-                }}  
+ 
             >   
                 {categoryArray.map((elm) => {
                     return(                         
@@ -37,7 +36,7 @@ export default function CategoriesCarousel(){
 
                                     <div className="CategoryCard p-5 bg-[#68e2f823] rounded-t-2xl  rounded-b-[99px] ">
 
-                                        <IconsThing ctg={elm} key={elm.index}  />
+                                        <IconsThing ctg={elm} sz={45} clr="#334A4F"  />
                                       
                                     </div>  
 
@@ -51,14 +50,9 @@ export default function CategoriesCarousel(){
                 })} 
             </Swiper>
 
-                <button className="custom-prev z-10 absolute left-2 top-10 -translate-y-1/2  text-white p-3 rounded-full hover:bg-black/50 transition">
-                    <MdKeyboardDoubleArrowLeft size={20}/>
-                </button>
-                <button className="custom-next z-10 absolute right-2  top-10 -translate-y-1/2  text-white p-3 rounded-full hover:bg-black/50 transition">
-                    <MdKeyboardDoubleArrowRight size={20}/>
-                </button>
+
             
-        </section>
+        </div>
         <ProducListing category={category}/>
         </>
     )

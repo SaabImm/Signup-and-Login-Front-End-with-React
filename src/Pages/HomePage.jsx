@@ -1,17 +1,15 @@
-import heroImage from '../assets/laptopHero2.jpg'
-
-
-
+import HeroSection from "../Components/HeroSection"
+import CategoriesCarousel from "../Components/Category"
+import ItemCard from '../Components/ItemCards'
+import data from '../MockDataAPI/products.json'
 export default function HomePage(){
 
     return(
         <>
-            <div className="h-full">
-                <img src={heroImage} alt="Hero Image" />
-            </div>
-
-            
-            
+         <section id="hero"><HeroSection /></section>
+         <section id="categories"> <CategoriesCarousel  /></section>
+         <section id="listing"> <ItemCard data={data[0]}/> </section>
+              
         </> 
     )
 }
