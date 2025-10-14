@@ -23,16 +23,13 @@ export default function ProductListing(){
             
         {/* Blur Overlay when not showing all */}
         {!showAll && data.length > 6 && (
-            <div className="absolute bottom-[-50px] left-0 right-0 h-[100%]
-                            bg-gradient-to-t from-white via-white/60 to-transparent 
-                            flex justify-center items-end pb-6">
+          <div className=" flex justify-center items-end pb-6 my-10">
             <button
                 onClick={() => setShowAll(true)}
-                className="px-5 py-2 bg-[#334A4F] text-white rounded-xl shadow-md backdrop-blur-sm hover:bg-[#0096C7] transition"
-            >
-                Show More
+                className="px-8 py-2 border-2 border-[#0096C7] text-[#0096C7] bg-white rounded-xl shadow-lg backdrop-blur-sm hover:text-white hover:bg-[#0096C7] transition">
+                Show All
             </button>
-            </div>
+          </div>
     
       )}
 

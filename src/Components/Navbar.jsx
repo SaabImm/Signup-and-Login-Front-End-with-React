@@ -1,4 +1,4 @@
-import SauSauLogo from '../assets/SauSauLogo2.png' 
+import SauSauLogo from '../assets/favicon_io (1)/favicon222.ico' 
 import NavLink from './NavLinks'
 import CategoriesMenue from './CategoriesMenue';
 import { Link } from "react-router-dom";

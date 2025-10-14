@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef  } from "react"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation} from "swiper/modules";
 
@@ -11,7 +11,8 @@ import data from '../MockDataAPI/products.json'
 
 export default function CategoriesCarousel(){
     const [category, setCategory]= useState('')
-    const [visibleProducts, setVisibleProducts ]= useState([]) 
+    const [visibleProducts, setVisibleProducts ]= useState([])
+    const productsRef = useRef(null);  
     
         const categoryArray = [...new Set(data.map(item => item.category))];
 
@@ -21,7 +22,11 @@ export default function CategoriesCarousel(){
             };
 
         useEffect(() => {
-            if(category) ShowCatElements();
+            if(category) {ShowCatElements()
+                setTimeout(() => {
+                productsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+                }, 150);
+            }
         }
         ,[category])
 
@@ -29,7 +34,7 @@ export default function CategoriesCarousel(){
             setCategory(cat)
         }
 
-
+        
 
 
     return(
@@ -72,12 +77,12 @@ export default function CategoriesCarousel(){
 
             
         </div>
-        <div className="transition">
+        <div ref={productsRef} >
             {category && 
             <SectionTitle title={`Check out our ${category}`}/>
             }
             
-            <div className="ProductGrid flex flex-wrap gap-6 justify-center mt-10 transition">
+            <div className="ProductGrid flex flex-wrap gap-6 justify-center mt-10">
                 {visibleProducts.map((pr, index) => (
                 <ItemCard data={pr} key={index} />
                 ))}

@@ -3,12 +3,17 @@ import airpodsMaxSilverCloseUp from '..//assets/matt-birchler-F5ZtkCWbtyE-unspla
 import airpodsMaxBlack from '..//assets/sam-grozyan-uNC9-RgzjTA-unsplash.jpg'
 import airpodsMaxBlue from '..//assets/project-290-Q-raIe-gAOo-unsplash.jpg'
 import { useState } from 'react'
+import { useParams } from "react-router-dom";
+import data from '../MockDataAPI/products.json'
 import Rating from '../Components/Rating'
 
-export default function ProductDetail({ item }) {
+export default function ProductDetail() {
   const [quantity, setQuantity] = useState(1);
-
+  const { id } = useParams(); 
+  const item = data.find(item => item.id === parseInt(id));
+  console.log(id)
   return (
+    
     <section className="flex flex-col md:flex-row gap-12 mx-10 my-[50px] lg:mx-20 py-10">
       {/* Left Side - Product Images */}
       <div className="flex flex-col w-full md:w-1/2 gap-6">
@@ -73,11 +78,9 @@ export default function ProductDetail({ item }) {
         <div>
           <p className="text-sm font-semibold mb-2">Choose a Color</p>
           <div className="flex gap-3">
-
-            {item.colors.map((color)=>{
-
-               return <span className={`w-8 h-8 bg-${color} rounded-full cursor-pointer border-2 border-gray-300`}></span>
-            } ) }
+            <span className={`w-8 h-8 bg-black rounded-full cursor-pointer border-2 border-gray-300`}></span>
+            <span className={`w-8 h-8 bg-gray-500 rounded-full cursor-pointer border-2 border-gray-300`}></span>
+            <span className={`w-8 h-8 bg-sky-400 rounded-full cursor-pointer border-2 border-gray-300`}></span>
             
           </div>
         </div>

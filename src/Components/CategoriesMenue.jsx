@@ -10,7 +10,7 @@ export default function CategoriesMenue({categoryArray}){
                 return(
                     <li key={item.index} className="flex items-center text-sm p-1 m-1 rounded-md  hover:border-blue-500 border-[0.5px] border-transparent transition">
                         <IconsThing ctg={item}  sz={20} />
-                        <NavLink path={''}  text={item.charAt(0).toUpperCase() + item.slice(1)} />
+                        <NavLink path={'#categories'}  text={item.charAt(0).toUpperCase() + item.slice(1)} />
                     </li>
                 )
             } )
