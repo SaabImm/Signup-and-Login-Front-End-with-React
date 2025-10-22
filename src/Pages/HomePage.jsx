@@ -1,5 +1,5 @@
-import HeroSection from "../Components/HeroSection"
-import CategoriesCarousel from "../Components/Category"
+import HeroSection from "../Components/Home/HeroSection"
+import CategoriesCarousel from "../Components/Home/Category"
 import ProductListing from "./ProductListing"
 export default function HomePage(){
 

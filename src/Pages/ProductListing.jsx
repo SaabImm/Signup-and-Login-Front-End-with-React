@@ -1,5 +1,5 @@
 import { useState } from "react"
-import ItemCard from "../Components/ItemCards"
+import ItemCard from "../Components/Product/ItemCards"
 import data from '../MockDataAPI/products.json'
 import SectionTitle from "../Components/Title"
 

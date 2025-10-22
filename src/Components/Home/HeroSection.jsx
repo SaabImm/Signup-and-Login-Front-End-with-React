@@ -1,4 +1,4 @@
-import heroImage from '../assets/laptopHero2.jpg'
+import heroImage from '/src/assets/laptopHero2.jpg'
 
 
 

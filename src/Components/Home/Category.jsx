@@ -4,10 +4,10 @@ import { Navigation} from "swiper/modules";
 
 import "swiper/css/navigation";
 import "swiper/css";
-import ItemCard from "./ItemCards";
-import IconsThing from "./iconThing";
-import SectionTitle from "./Title";
-import data from '../MockDataAPI/products.json'
+import ItemCard from "../Product/ItemCards";
+import IconsThing from "../iconThing";
+import SectionTitle from "../Title";
+import data from '../../MockDataAPI/products.json'
 
 export default function CategoriesCarousel(){
     const [category, setCategory]= useState('')

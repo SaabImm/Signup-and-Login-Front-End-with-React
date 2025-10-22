@@ -5,7 +5,7 @@ import airpodsMaxBlue from '..//assets/project-290-Q-raIe-gAOo-unsplash.jpg'
 import { useState } from 'react'
 import { useParams } from "react-router-dom";
 import data from '../MockDataAPI/products.json'
-import Rating from '../Components/Rating'
+import Rating from '../Components/Product/Rating'
 
 export default function ProductDetail() {
   const [quantity, setQuantity] = useState(1);

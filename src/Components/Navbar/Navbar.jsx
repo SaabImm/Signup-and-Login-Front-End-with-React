@@ -1,12 +1,13 @@
-import SauSauLogo from '../assets/favicon_io (1)/favicon222.ico' 
+ 
 import NavLink from './NavLinks'
 import CategoriesMenue from './CategoriesMenue';
 import { Link } from "react-router-dom";
 import { useState, useContext} from "react"
-import {SearchBarContext} from '../Context/SearchBarContext'
+import {SearchBarContext} from '../../Context/SearchBarContext'
 import { PiShoppingCartFill } from "react-icons/pi";
 import { IoSearchOutline } from "react-icons/io5";
-import data from '../MockDataAPI/products.json'
+import { PiUser } from "react-icons/pi";
+import data from '../../MockDataAPI/products.json'
 
 export default function Navbar(){
     const [isOpenBar, setIsOpenBar]=  useState(false)
@@ -25,7 +26,7 @@ export default function Navbar(){
         <nav className='NavBar '>
             <div className='top-0 right-0 left-0 flex justify-between items-center rounded-b-lg px-12 py-2 text-[#383838] text-shadow-lg/30'>
                 <Link to='/'>
-                <img src={SauSauLogo} alt="Sau Sau Logo" className='rounded-xl w-10'/>
+                EeasySop
                 </Link>
 
                 <div className='NavLinks ' >
@@ -53,6 +54,8 @@ export default function Navbar(){
                     <button onClick={toggleSearchBar}>
                     <li ><IoSearchOutline  size={20}/> </li>
                     </button>
+
+                    <li ><PiUser   size={20}/> </li>
                 </ul>
             </div>
             

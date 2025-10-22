@@ -1,5 +1,5 @@
 import NavLink from "./NavLinks"
-import IconsThing from "./iconThing"
+import IconsThing from "../iconThing"
 
 
 export default function CategoriesMenue({categoryArray}){

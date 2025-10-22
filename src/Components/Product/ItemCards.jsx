@@ -1,4 +1,4 @@
-import HeadPhones from '../assets/ravi-palwe-ax23KYiUdJc-unsplash.jpg'
+import HeadPhones from '/src/assets/ravi-palwe-ax23KYiUdJc-unsplash.jpg'
 import Rating from "./Rating";
 import { Link } from "react-router-dom";
 
