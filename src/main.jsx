@@ -1,13 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { InputContexte } from './Context/SearchBarContext'
+import  UserProvider  from "./Context/userContext.jsx"
 import './index.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <InputContexte>
+
+    <UserProvider>
     <App />
-    </InputContexte>
-  </StrictMode>,
+    </UserProvider>
+
 )

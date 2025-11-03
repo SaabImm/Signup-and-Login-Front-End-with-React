@@ -1,0 +1,74 @@
+import Title from '../Components/Title'
+import sabAvatar from '../assets/SabrinaAvatar.jpg'
+import Navbar from '../Components/Navbar/Navbar'
+import { useContext } from "react";
+import { UserContext } from "../context/UserContext";
+export default function ProfilePage() {
+  const { user } = useContext(UserContext);
+  return (
+    <>
+      <Navbar />
+
+      <div className="min-h-screen px-10 py-16 bg-gray-50">
+
+        {/* Page Header */}
+        <div className="w-3/4 mx-auto mb-14 text-center">
+          <Title title="Profile" />
+          <p className="text-gray-600 mt-2 text-lg">
+            View all your profile details here
+          </p>
+        </div>
+
+        {/* Main Content */}
+        <div className="w-3/4 mx-auto flex items-start gap-14">
+
+          {/* Left Side */}
+          <div className="basis-1/3 flex flex-col items-center gap-6">
+            <img
+              src={sabAvatar}
+              alt="Profile"
+              loading="lazy"
+              className="w-40 h-40 object-cover rounded-full border-4 border-gray-300 shadow"
+            />
+
+            <div className="text-center">
+              <h2 className="text-2xl font-semibold">Sabrina Bessa</h2>
+              <p className="text-gray-500 mt-1">saabimm@gmail.com</p>
+              <span className="text-sm px-3 py-1 bg-gray-200 rounded-full mt-2 inline-block">
+                User
+              </span>
+            </div>
+          </div>
+
+          {/* Right Side */}
+          <div className="basis-2/3 p-8 bg-white rounded-xl shadow-md">
+            <Title title="Personal Details" />
+
+            <div className="mt-6 grid grid-cols-2 gap-6 text-gray-700">
+              <div>
+                <p className="font-medium">Name</p>
+                <p className="text-gray-500 text-sm mt-1"> {user?.name} </p>
+              </div>
+
+              <div>
+                <p className="font-medium">Last Name</p>
+                <p className="text-gray-500 text-sm mt-1"> {user?.lastname} </p>
+              </div>
+
+              <div>
+                <p className="font-medium">Role</p>
+                <p className="text-gray-500 text-sm mt-1"> {user?.role} </p>
+              </div>
+
+              <div>
+                <p className="font-medium">email</p>
+                <p className="text-gray-500 text-sm mt-1"> {user?.email} </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
