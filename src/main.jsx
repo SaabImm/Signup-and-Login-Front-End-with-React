@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import  UserProvider  from "./Context/userContext.jsx"
+import  UserProvider  from "./Context/dataCont.jsx"
 import './index.css'
 import App from './App.jsx'
 
