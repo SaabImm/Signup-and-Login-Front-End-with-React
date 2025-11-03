@@ -2,7 +2,7 @@ import Title from '../Components/Title'
 import sabAvatar from '../assets/SabrinaAvatar.jpg'
 import Navbar from '../Components/Navbar/Navbar'
 import { useContext } from "react";
-import { UserContext } from "../context/UserContext";
+import { UserContext } from "../Context/dataCont";
 export default function ProfilePage() {
   const { user } = useContext(UserContext);
   return (
