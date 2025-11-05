@@ -4,49 +4,49 @@ import { useNavigate } from "react-router-dom";
 import Navbar from '../Components/Navbar/Navbar'
 import { useContext } from "react";
 import { UserContext } from "../Context/dataCont";
+const BACKEND_URL = "https://back-end-signup-and-login.onrender.com";
 
-export default function FormulaireCNOA () {
-    const [formData, setFormData] = useState({
-      name: "",
-      lastname: "",
-      email:"",
-      password: ""
+   export default function FormulaireCNOA() {
+  const [formData, setFormData] = useState({
+    name: "",
+    lastname: "",
+    email: "",
+    password: "",
+  });
+
+  const navigate = useNavigate();
+  const { setAuthData } = useContext(UserContext);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
     });
-    const navigate = useNavigate(); 
-    const handleChange = (e)=>{
-      e.preventDefault();
-      setFormData({
-        ...formData, [e.target.name]: e.target.value,
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(`${BACKEND_URL}/auth/signup`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
-  }
 
-
-
-const { setUser } = useContext(UserContext);
-
-const handleSubmit = async (e) => {
-  e.preventDefault();
-
-  try {
-    const response = await fetch("https://back-end-signup-and-login.onrender.com/auth/signup", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
-
-    const data = await response.json();
-
-    if (response.ok) {
-      setUser(data.user); // ✅ save to context
-      navigate("/profile");
+      const data = await response.json();
+      if (response.ok) {
+      navigate("/verify-pending");
     } else {
-      console.log("Signup failed:", data);
+      alert(data.message || "Signup error");
     }
-
-  } catch (err) {
-    console.error(err);
-  }
-};
+    } catch (err) {
+      console.error(err);
+      alert("An error occurred during signup.");
+    }
+  };
 
   return (
     <>

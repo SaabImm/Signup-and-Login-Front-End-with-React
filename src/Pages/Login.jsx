@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "../Context/dataCont";
 import { Link } from "react-router-dom";
-
+const BACKEND_URL = "https://back-end-signup-and-login.onrender.com";
 const LoginForm = () => {
   const [formData, setFormData] = useState({
     email:"",
@@ -18,11 +18,11 @@ const LoginForm = () => {
     });
 }
 
-const { setUser } = useContext(UserContext);
+const { setAuthData } = useContext(UserContext);
   const handleSubmit =async (e)=> {
     e.preventDefault();
     try{
-      const response = await fetch("https://back-end-signup-and-login.onrender.com/auth/login" ,{
+      const response = await fetch( `${BACKEND_URL}/auth/login`,{
       method: "POST",
       headers: {
           "Content-Type": "application/json",
@@ -34,7 +34,10 @@ const { setUser } = useContext(UserContext);
     const data = await response.json();
 
     if (response.ok) {
-      setUser(data.user); // ✅ save to context
+                setAuthData({
+            user: data.user,
+            token: data.token
+          }); 
       navigate("/profile");
       console.log('u have logged in successfully!!')
     } else {

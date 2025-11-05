@@ -3,33 +3,36 @@ import { createContext, useState, useEffect } from "react";
 export const UserContext = createContext();
 
 export default function UserProvider({ children }) {
-  const [user, setUser] = useState(null);
+  const [authData, setAuthData] = useState({
+    user: null,
+    token: null
+  });
 
-  // ✅ Load user from localStorage on refresh
+  // ✅ Load authData from localStorage on refresh
   useEffect(() => {
-    const savedUser = localStorage.getItem("user");
-    if (savedUser) {
-      setUser(JSON.parse(savedUser));
+    const stored = localStorage.getItem("authData");
+    if (stored) {
+      setAuthData(JSON.parse(stored));
     }
   }, []);
 
-  // ✅ Save user to localStorage whenever it changes
+  // ✅ Save authData to localStorage whenever it changes
   useEffect(() => {
-    if (user) {
-      localStorage.setItem("user", JSON.stringify(user));
+    if (authData.user && authData.token) {
+      localStorage.setItem("authData", JSON.stringify(authData));
     } else {
-      localStorage.removeItem("user");
+      localStorage.removeItem("authData");
     }
-  }, [user]);
+  }, [authData]);
 
   // ✅ Logout
   const logout = () => {
-    setUser(null);
-    localStorage.removeItem("user");
+    setAuthData({ user: null, token: null });
+    localStorage.removeItem("authData");
   };
 
   return (
-    <UserContext.Provider value={{ user, setUser, logout }}>
+    <UserContext.Provider value={{ authData, setAuthData, logout }}>
       {children}
     </UserContext.Provider>
   );

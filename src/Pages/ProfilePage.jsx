@@ -4,7 +4,7 @@ import Navbar from '../Components/Navbar/Navbar'
 import { useContext } from "react";
 import { UserContext } from "../Context/dataCont";
 export default function ProfilePage() {
-  const { user } = useContext(UserContext);
+  const { authData } = useContext(UserContext);
   return (
     <>
       <Navbar />
@@ -32,10 +32,10 @@ export default function ProfilePage() {
             />
 
             <div className="text-center">
-              <h2 className="text-2xl font-semibold">{user?.name} {user?.lastname} </h2>
-              <p className="text-gray-500 mt-1">{user?.email}</p>
+              <h2 className="text-2xl font-semibold">{authData.user?.name} {authData.user?.lastname} </h2>
+              <p className="text-gray-500 mt-1">{authData.user?.email}</p>
               <span className="text-sm px-3 py-1 bg-gray-200 rounded-full mt-2 inline-block">
-                User
+                {authData.user?.role}
               </span>
             </div>
           </div>
@@ -47,22 +47,22 @@ export default function ProfilePage() {
             <div className="mt-6 grid grid-cols-2 gap-6 text-gray-700">
               <div>
                 <p className="font-medium">Name</p>
-                <p className="text-gray-500 text-sm mt-1"> {user?.name} </p>
+                <p className="text-gray-500 text-sm mt-1"> {authData.user?.name} </p>
               </div>
 
               <div>
                 <p className="font-medium">Last Name</p>
-                <p className="text-gray-500 text-sm mt-1"> {user?.lastname} </p>
+                <p className="text-gray-500 text-sm mt-1"> {authData.user?.lastname} </p>
               </div>
 
               <div>
                 <p className="font-medium">Role</p>
-                <p className="text-gray-500 text-sm mt-1"> {user?.role} </p>
+                <p className="text-gray-500 text-sm mt-1"> {authData.user?.role} </p>
               </div>
 
               <div>
                 <p className="font-medium">email</p>
-                <p className="text-gray-500 text-sm mt-1"> {user?.email} </p>
+                <p className="text-gray-500 text-sm mt-1"> {authData.user?.email} </p>
               </div>
             </div>
 
