@@ -1,10 +1,8 @@
-import {React, useState, useEffect} from "react";
+import {React, useState} from "react";
 import Title from '../Components/Title'
 import { useNavigate } from "react-router-dom";
 import Navbar from '../Components/Navbar/Navbar'
-import { useContext } from "react";
-import { UserContext } from "../Context/dataCont";
-const BACKEND_URL = "https://back-end-signup-and-login.onrender.com";
+const API_URL = import.meta.env.VITE_API_URL;
 
    export default function FormulaireCNOA() {
   const [formData, setFormData] = useState({
@@ -15,8 +13,6 @@ const BACKEND_URL = "https://back-end-signup-and-login.onrender.com";
   });
 
   const navigate = useNavigate();
-  const { setAuthData } = useContext(UserContext);
-
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -24,27 +20,29 @@ const BACKEND_URL = "https://back-end-signup-and-login.onrender.com";
     });
   };
 
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${BACKEND_URL}/auth/signup`, {
+      const response = await fetch(`${API_URL}/auth/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
-
-      const data = await response.json();
+      console.log("STATUS", response.status);      
+      const data = await response.json()
+      
       if (response.ok) {
       navigate("/verify-pending");
     } else {
-      alert(data.message || "Signup error");
+      console.error(data.message || "Signup error");
     }
     } catch (err) {
-      console.error(err);
-      alert("An error occurred during signup.");
+      console.error("An error occurred during signup.");
     }
   };
 

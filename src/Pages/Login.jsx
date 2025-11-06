@@ -4,7 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "../Context/dataCont";
 import { Link } from "react-router-dom";
-const BACKEND_URL = "https://back-end-signup-and-login.onrender.com";
+const API_URL = import.meta.env.VITE_API_URL;
+
+
 const LoginForm = () => {
   const [formData, setFormData] = useState({
     email:"",
@@ -22,7 +24,7 @@ const { setAuthData } = useContext(UserContext);
   const handleSubmit =async (e)=> {
     e.preventDefault();
     try{
-      const response = await fetch( `${BACKEND_URL}/auth/login`,{
+      const response = await fetch( `${API_URL}/auth/login`,{
       method: "POST",
       headers: {
           "Content-Type": "application/json",

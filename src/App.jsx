@@ -14,7 +14,7 @@ export default function App() {
           <Route path="/" element={<LoginForm/>} />
           <Route path="/profile" element={<ProfilePage/>} />
           <Route path="/verify-pending" element={<VerifyPendingPage />} />
-          <Route path="/verify/:token" element={<VerifyPage/>} />
+          <Route path="/verify" element={<VerifyPage/>} />
           
       </Routes>
     </Router>

@@ -1,11 +1,12 @@
 import { useEffect, useState, useContext } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useSearchParams , useNavigate } from "react-router-dom";
 import { UserContext } from "../Context/dataCont";
 
-const BACKEND_URL = "https://back-end-signup-and-login.onrender.com";
+const API_URL = import.meta.env.VITE_API_URL;
 
 export default function VerifyPage() {
-  const { token } = useParams();
+    const [searchParams] = useSearchParams();
+  const token = searchParams.get("token");
   const [message, setMessage] = useState("Verifying your email...");
   const { setAuthData } = useContext(UserContext);
   const navigate = useNavigate();
@@ -13,11 +14,11 @@ export default function VerifyPage() {
   useEffect(() => {
     const verifyUser = async () => {
       try {
-        const response = await fetch(`${BACKEND_URL}/auth/verify/${token}`, {
+        const response = await fetch(`${API_URL}/auth/verify?token=${token}`, {
           method: "GET",
           headers: { "Content-Type": "application/json" },
         });
-
+        console.log("fetched successfully!!!")
         const data = await response.json();
 
         if (response.ok) {
