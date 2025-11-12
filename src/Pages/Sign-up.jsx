@@ -1,11 +1,16 @@
-import {React, useState} from "react";
+import {React, useState, useContext, useEffect} from "react";
 import Title from '../Components/Title'
 import { useNavigate } from "react-router-dom";
+import { UserContext } from "../Context/dataCont";
 import Navbar from '../Components/Navbar/Navbar'
 const API_URL = import.meta.env.VITE_API_URL;
 
    export default function FormulaireCNOA() {
   const [message, setMessage] = useState("");
+  const { setAuthData, authData } = useContext(UserContext);
+  useEffect(() => {
+  console.log("authData updated:", authData);
+}, [authData]);
   const today = new Date();
   const yyyy = today.getFullYear();
   const mm = String(today.getMonth() + 1).padStart(2, '0'); // months are 0-indexed
@@ -50,9 +55,16 @@ const API_URL = import.meta.env.VITE_API_URL;
         password: formData.password
       })
       }); 
+
       const data = await response.json()
+      console.log('data was RETREIVED successfully',data)
       setMessage(data.message)
       if (response.ok) {
+          setAuthData({
+        user: data.user,
+        token: data.token, // make sure your backend returns this token
+  });
+      
       navigate("/verify-pending");
     } else {
       console.error(data.message || "Signup error");

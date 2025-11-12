@@ -14,14 +14,19 @@ export default function ProfilePage() {
   useEffect(() => {
   if (authData.user !== null) {
     setLoading(false);
+    console.log("no datauser")
   }
 }, [authData]);
   useEffect(() => {
       if (!authData.user && !loading) 
         {navigate("/");
           setLoading(false)
+          console.log("hhhhhhhhhhhhhh")
         }      
     }, [authData, loading]);
+
+
+    
   //handles the logout button
   const handleLogout = async (e) => { 
     e.preventDefault();

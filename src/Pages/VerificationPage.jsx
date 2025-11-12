@@ -9,7 +9,6 @@ export default function VerifyPage() {
     const [searchParams] = useSearchParams();
   const token = searchParams.get("token");
   const [message, setMessage] = useState("Verifying your email...");
-  const { setAuthData } = useContext(UserContext);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -19,14 +18,11 @@ export default function VerifyPage() {
           method: "GET",
           headers: { "Content-Type": "application/json" },
         });
+       console.log("fetched :!!!!!!!!")
         const data = await response.json();        
         if (response.ok) {
           // ✅ Save user and token in context
-          setAuthData({
-            user: data.user,
-            token: data.token,
-          });
-
+          console.log('data is set successfully')
           setMessage("✅ Email verified! Redirecting to your profile...");
           
           // Wait a moment for UX, then navigate
@@ -41,7 +37,7 @@ export default function VerifyPage() {
     };
 
     verifyUser();
-  }, [token, navigate, setAuthData]);
+  }, [token, navigate]);
 
   return (
         <div className='PendingContainer min-h-screen flex items-center justify-center '>
